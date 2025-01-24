@@ -6,15 +6,6 @@ function appendValue(val) {
     inputField.value += val; // Append the clicked value to the input field
     console.log(document.getElementById("input").value, "inputedvalue");
 }
-//Function to input value using Key
-// function handleKeyInput(event) {
-//     if (event.key == '0' || event.key == '1' || event.key == '2' || event.key == '3' || event.key == '4' ||
-//         event.key == '5' || event.key == '6' || event.key == '7' || event.key == '8' || event.key == '9' ||
-//         event.key == '+' || event.key == '-' || event.key == '/' || event.key == '%' || event.key == '*' ||
-//         event.key == '=')
-//         console.log(event.key, "event.key")
-//     inputField.value += event.key;
-// }
 
 // Function to input value using keyboard
 function handleKeyInput(event) {
@@ -44,9 +35,9 @@ function handleClearResult() {
 // Function to evaluate the result
 function handleEqual() {
     try {
-        inputField.value = eval(inputField.value); // Evaluate the expression and update the input field
+        inputField.value = eval(inputField.value);
     } catch (error) {
-        inputField.value = "Error"; // Handle invalid expressions
+        inputField.value = "Error";
     }
 }
 
